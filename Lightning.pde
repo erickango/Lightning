@@ -1,5 +1,5 @@
 int startX, endX = 0;
-int startY, endY = 150;
+int startY, endY = 0;
 void setup()
 {
   background(0);
@@ -8,8 +8,9 @@ void setup()
 }
 void draw()
 {
-	//(int)(Math,random() * 256), (int)(Math,random() * 256), (int)(Math,random() * 256)
-  stroke();
+  noLoop();
+  stroke(((int)(Math.random() * 256)), ((int)(Math.random() * 256)), ((int)(Math.random() * 256)));
+  
   line(startX, startY, endX, endY);
 }
 void mousePressed()
